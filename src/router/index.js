@@ -28,7 +28,7 @@ Vue.use(VueRouter)
     path: '/my',
     name: 'My',
     component: () => import('../views/My.vue')//懒加载
-  },
+  }
 ]
 
 const router = new VueRouter({

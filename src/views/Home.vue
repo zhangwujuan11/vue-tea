@@ -10,18 +10,20 @@
 		  @select="handleSelect"
 		  text-color="#000000"
 		  active-text-color="#b54f4a"
-		  collapse-transition="false"
+		  
 		  >
-		  <el-menu-item index="1">处理中心</el-menu-item>
-		  <el-menu-item index="2">222</el-menu-item>
-		  <el-menu-item index="3" >消息中心</el-menu-item>
-		  <el-menu-item index="4">444</el-menu-item>
-		  <el-menu-item index="5">444</el-menu-item>
-		  <el-menu-item index="6">444</el-menu-item>
-		  <el-menu-item index="7">444</el-menu-item>
-		  <el-menu-item index="8">444</el-menu-item>
+		  <el-menu-item index="1">推荐</el-menu-item>
+		  <el-menu-item index="2">大红袍</el-menu-item>
+		  <el-menu-item index="3" >绿茶</el-menu-item>
+		  <el-menu-item index="4">铁观音</el-menu-item>
+		  <el-menu-item index="5">普洱</el-menu-item>
+		   <el-menu-item index="6">花茶</el-menu-item>
+		  <el-menu-item index="7">茶具</el-menu-item>
 		</el-menu>
 	</section>
+	<!-- 轮播 -->
+		<Swiper></Swiper>
+
 		
 		
 	
@@ -31,7 +33,7 @@
 
 <script>
 import Header from '@/components/home/Header.vue'
-// import Swiper from '@/components/home/Swiper.vue'
+import Swiper from '@/components/home/Swiper.vue'
 import Tabbar from '@/components/common/Tabbar.vue'
 export default {
   name: "Home",
@@ -49,7 +51,7 @@ export default {
   components:{
 	Tabbar,
 	Header,
-	
+	Swiper
   }
 };
 </script>
@@ -67,7 +69,7 @@ export default {
 .el-menu{
 	overflow-x: auto;
 	overflow-y: hidden;
-	 white-space:nowrap;
-	  width: auto;
+	white-space:nowrap;
+	width: auto;
 	   }
 </style>

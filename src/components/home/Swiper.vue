@@ -19,6 +19,9 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
   export default {
      name:"Swiper",
+	 props:{
+		swiperList:Array 
+	 },
 	 data(){
 		 return{
 			swiperOption: {//swiper3
@@ -27,21 +30,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 				pagination: {
 					el: '.swiper-pagination'
 				}
-			},
-			swiperList:[
-				{
-					id:1,
-					imgUrl:'./images/swiper1.jpeg'
-				},
-				{
-					id:2,
-					imgUrl:'./images/swiper2.jpeg'
-				},
-				{
-					id:3,
-					imgUrl:'./images/swiper3.jpeg'
-				}
-			],
+			}
 		 }
 	 },
 	 components: {
@@ -54,7 +43,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 <style scoped>
 	
 .swiper-main{
-	margin-top: 2.65rem;
+
 	width: 100%;
 	height: 4.4rem;
 }

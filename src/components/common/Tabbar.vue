@@ -65,12 +65,8 @@
 <style scoped>
 	.tabbar{
 		width: 100%;
-		position:fixed;
-		left: 0;
-		bottom: 0;
 		height:2.1875rem;
 		background-color:white;
-		z-index: 999;
 	}
 	.tabbar ul{
 		display: flex;

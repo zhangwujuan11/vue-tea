@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<h1><img src="@/assets/imge/logo.gif" alt=""></h1>
-		<div class="serch">
+		<div class="serch" @click="goSearch">
 			<i class="iconfont icon-fangdajing"></i>
 			<span>搜你喜欢的…</span>
 		</div>
@@ -12,6 +12,13 @@
 </template>
 
 <script>
+	export default{
+		methods:{
+			goSearch(){
+				this.$router.push("/search")
+			}
+		}
+	}
 </script>
 
 <style scoped>
@@ -22,9 +29,6 @@
 		width: 100%;
 		height: 1.157895rem;
 		background-color: #b0352f;
-		position: fixed;
-		top: 0;
-		left: 0;
 	}
 	header h1{
 		width:2.266667rem;

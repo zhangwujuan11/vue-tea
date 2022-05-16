@@ -28,6 +28,11 @@ Vue.use(VueRouter)
     path: '/my',
     name: 'My',
     component: () => import('../views/My.vue')//懒加载
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search.vue')//懒加载
   }
 ]
 
